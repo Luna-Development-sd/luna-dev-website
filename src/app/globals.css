@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection {
+    background-color: #175442;
+    color: white;
+  }
+
+  ::-moz-selection {
+    background-color: #175442;
+    color: white;
+  }
+}
+
+@layer utilities {
+  @keyframes crane-sway {
+    0%, 100% {
+      transform: rotate(0deg);
+      transform-origin: bottom center;
+    }
+    25% {
+      transform: rotate(-1deg);
+      transform-origin: bottom center;
+    }
+    75% {
+      transform: rotate(1deg);
+      transform-origin: bottom center;
+    }
+  }
+
+  @keyframes crane-cable {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes crane-hook {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-crane-sway-1 {
+    animation: crane-sway 8s ease-in-out infinite;
+  }
+
+  .animate-crane-sway-2 {
+    animation: crane-sway 10s ease-in-out infinite;
+  }
+
+  .animate-crane-sway-3 {
+    animation: crane-sway 12s ease-in-out infinite;
+  }
+
+  .animate-crane-cable {
+    animation: crane-cable 4s ease-in-out infinite;
+  }
+
+  .animate-crane-hook {
+    animation: crane-hook 4s ease-in-out infinite;
+  }
+}

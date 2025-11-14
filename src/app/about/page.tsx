@@ -1,33 +1,26 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import ADUAnimation from "@/components/ADUAnimationClient";
+import Footer from "@/components/Footer";
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar currentPage="about" />
 
-      {/* Hero with 3D Animation */}
-      <section className="px-6 lg:px-8 pt-16 pb-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-[1.1]">
-                About Luna Development
-              </h1>
-              <p className="text-xl text-slate-600 leading-relaxed">
-                Luna Development is a San Diego based real estate development company focused on transforming under-utilized coastal properties into vibrant, modern, highly livable communities.
-              </p>
-            </div>
-            <div className="h-[400px] lg:h-[500px]">
-              <ADUAnimation />
-            </div>
-          </div>
+      {/* Hero */}
+      <section className="px-6 lg:px-8 pt-24 pb-16 bg-luna-beige">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-[1.1]">
+            About Luna Development
+          </h1>
+          <p className="text-xl lg:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Luna Development is a San Diego based real estate development company focused on transforming under-utilized coastal properties into vibrant, modern, highly livable communities.
+          </p>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="px-6 lg:px-8 py-20 bg-slate-50">
+      <section className="px-6 lg:px-8 py-20 bg-luna-beige">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
@@ -55,7 +48,7 @@ export default function AboutPage() {
       </section>
 
       {/* What We Do */}
-      <section className="px-6 lg:px-8 py-24">
+      <section className="px-6 lg:px-8 py-24 bg-luna-beige">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-16">
             What We Do
@@ -146,13 +139,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-6 lg:px-8 py-12 border-t border-slate-200">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-slate-600 gap-4">
-          <p>© {new Date().getFullYear()} Luna Development. All rights reserved.</p>
-          <p>San Diego, California</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

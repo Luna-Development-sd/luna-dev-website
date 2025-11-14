@@ -1,51 +1,33 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function ServicesPage() {
   const services = [
     {
       number: "01",
-      title: "Entitlement Mastery",
-      description: "Navigate complex zoning, coastal regulations, and SB9 requirements with precision. Our expertise turns regulatory challenges into opportunities.",
-      details: [
-        "Zoning analysis and compliance",
-        "Coastal Commission navigation",
-        "SB9 lot split expertise",
-        "Entitlement strategy and execution"
-      ]
+      title: "Site Acquisition & Due Diligence",
+      description: "Identifying strategic sites and conducting full zoning, environmental, and feasibility analysis."
     },
     {
       number: "02",
-      title: "Coastal Expertise",
-      description: "Deep understanding of Pacific Beach and San Diego coastal properties. We know the neighborhoods, the challenges, and how to maximize value.",
-      details: [
-        "Pacific Beach specialization",
-        "Coastal property assessment",
-        "Market analysis and positioning",
-        "Community integration strategy"
-      ]
+      title: "Entitlement & Planning",
+      description: "Navigating city approvals, coastal overlays, and complex regulatory pathways to unlock maximum development potential."
     },
     {
       number: "03",
-      title: "Thoughtful Design",
-      description: "Modern ADUs that fit their neighborhoods and elevate the community. Built to last, built to live in, built to matter.",
-      details: [
-        "Architecture coordination",
-        "Sustainable design integration",
-        "Neighborhood-appropriate aesthetics",
-        "Quality construction oversight"
-      ]
+      title: "Design & Development Management",
+      description: "Leading architecture, engineering, and construction teams to deliver elevated coastal projects with precision and intention."
     },
     {
       number: "04",
-      title: "Value Creation",
-      description: "Strategic development that maximizes long-term value for landowners, investors, and residents. Smart returns on intelligent projects.",
-      details: [
-        "Financial analysis and modeling",
-        "Investment strategy development",
-        "Property value optimization",
-        "Long-term asset management"
-      ]
+      title: "Investment & Partnerships",
+      description: "Structuring and managing joint ventures, funds, and investor relationships for long-term value creation."
+    },
+    {
+      number: "05",
+      title: "Property Management & Operations",
+      description: "Professional management of stabilized assets to protect value and ensure exceptional tenant experience."
     }
   ];
 
@@ -54,53 +36,35 @@ export default function ServicesPage() {
       <Navbar currentPage="services" />
 
       {/* Hero */}
-      <section className="px-6 lg:px-8 pt-24 pb-16 bg-gradient-to-br from-slate-50 to-white">
+      <section className="px-6 lg:px-8 pt-24 pb-16 bg-luna-beige">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-[1.1]">
             Our Services
           </h1>
-          <p className="text-xl lg:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Comprehensive ADU development services from entitlement to completion
+          <p className="text-xl lg:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+            At Luna Development, we specialize in coastal infill development, transforming underutilized properties into high-impact, high-value assets. We manage the entire process—from vision to completion—with a focus on thoughtful design, community alignment, and long-term performance.
           </p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="px-6 lg:px-8 py-24">
+      <section className="px-6 lg:px-8 py-24 bg-luna-beige">
         <div className="max-w-6xl mx-auto">
-          <div className="space-y-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="grid lg:grid-cols-2 gap-12 items-start"
+                className="group p-8 border-2 border-slate-200 hover:border-[#175442] transition-all duration-300 cursor-pointer hover:shadow-xl hover:-translate-y-1"
               >
-                <div>
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-[#175442] text-white font-bold text-2xl mb-6">
-                    {service.number}
-                  </div>
-                  <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-                    {service.title}
-                  </h2>
-                  <p className="text-xl text-slate-600 leading-relaxed">
-                    {service.description}
-                  </p>
+                <div className="text-sm font-bold text-[#175442] mb-3 opacity-60 group-hover:opacity-100 transition-opacity">
+                  {service.number}
                 </div>
-
-                <div className="bg-slate-50 p-8 border border-slate-200">
-                  <h3 className="text-lg font-semibold text-slate-900 mb-4">
-                    What We Provide
-                  </h3>
-                  <ul className="space-y-3">
-                    {service.details.map((detail, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <svg className="w-6 h-6 text-[#175442] mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span className="text-slate-700">{detail}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4 group-hover:text-[#175442] transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-lg text-slate-600 leading-relaxed">
+                  {service.description}
+                </p>
               </div>
             ))}
           </div>
@@ -108,7 +72,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Process Section */}
-      <section className="px-6 lg:px-8 py-24 bg-slate-50">
+      <section className="px-6 lg:px-8 py-24 bg-luna-beige">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-16 text-center">
             Our Process
@@ -167,13 +131,13 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 lg:px-8 py-24">
+      <section className="px-6 lg:px-8 py-24 bg-luna-beige">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">
-            Ready to Start Your Project?
+            Let’s Build the Future of San Diego
           </h2>
           <p className="text-xl text-slate-600 mb-10 leading-relaxed">
-            Let's discuss how we can bring your coastal development vision to life.
+            Whether you’re a landowner, investor, architect, or future resident — we’d love to connect and explore what’s possible together.
           </p>
           <Link
             href="/contact"
@@ -187,13 +151,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-6 lg:px-8 py-12 border-t border-slate-200">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-slate-600 gap-4">
-          <p>© {new Date().getFullYear()} Luna Development. All rights reserved.</p>
-          <p>San Diego, California</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

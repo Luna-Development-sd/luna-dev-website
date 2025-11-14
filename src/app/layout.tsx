@@ -19,6 +19,33 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Luna Development | San Diego Coastal Real Estate Development",
   description: "San Diego based real estate development company transforming under-utilized coastal properties into vibrant, modern communities. Specializing in Pacific Beach development.",
+  icons: {
+    icon: '/lunalogo.png',
+    shortcut: '/lunalogo.png',
+    apple: '/lunalogo.png',
+  },
+  openGraph: {
+    title: "Luna Development | San Diego Coastal Real Estate Development",
+    description: "San Diego based real estate development company transforming under-utilized coastal properties into vibrant, modern communities. Specializing in Pacific Beach development.",
+    url: "https://lunadevelopmentsd.com",
+    siteName: "Luna Development",
+    images: [
+      {
+        url: '/lunalogo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Luna Development',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Luna Development | San Diego Coastal Real Estate Development",
+    description: "San Diego based real estate development company transforming under-utilized coastal properties into vibrant, modern communities. Specializing in Pacific Beach development.",
+    images: ['/lunalogo.png'],
+  },
 };
 
 export default function RootLayout({

@@ -6,24 +6,31 @@ import Link from "next/link";
 const projects = [
   {
     id: 1,
-    name: "Black Sands Inn",
-    location: "Shelter Cove, CA",
-    status: "Acquired August 2022",
-    image: "/placeholder-project-1.jpg", // Replace with actual image path
+    name: "870 Garnet Ave",
+    location: "Pacific Beach, San Diego, CA 92109",
+    status: "29 Units",
+    image: "/870garnet.png",
   },
   {
     id: 2,
-    name: "870 Garnet Ave",
-    location: "Pacific Beach, San Diego",
-    status: "In Development",
-    image: "/placeholder-project-2.jpg", // Replace with actual image path
+    name: "2061 Garnet Ave",
+    location: "Pacific Beach, San Diego, CA 92109",
+    status: "6 Units",
+    image: "/2061garnet.png",
   },
   {
     id: 3,
-    name: "5055 Mary Lane",
-    location: "Pacific Beach, San Diego",
-    status: "Completed 2024",
-    image: "/placeholder-project-3.jpg", // Replace with actual image path
+    name: "1345 Hornblend",
+    location: "Pacific Beach, San Diego, CA 92109",
+    status: "14 Units",
+    image: "/1345hornblend.png",
+  },
+  {
+    id: 4,
+    name: "910 Diamond St",
+    location: "Pacific Beach, San Diego, CA 92109",
+    status: "3 → 10 Units",
+    image: "/910diamond.png",
   },
 ];
 
@@ -63,10 +70,12 @@ export default function FeaturedProjects() {
                 <Link href="/projects" className="group block">
                   <div className="relative overflow-hidden bg-white">
                     {/* Image */}
-                    <div className="aspect-[16/9] bg-gradient-to-br from-slate-200 to-slate-300 relative overflow-hidden">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-slate-400 text-2xl">Project Image</span>
-                      </div>
+                    <div className="aspect-[16/9] bg-slate-200 relative overflow-hidden">
+                      <img
+                        src={project.image}
+                        alt={project.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
                       <div className="absolute inset-0 bg-luna-charcoal opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
 
                       {/* Project Info Overlay */}

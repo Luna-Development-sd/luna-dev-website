@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import ADUAnimation from "@/components/ADUAnimationClient";
+import Footer from "@/components/Footer";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -27,37 +28,30 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-luna-beige">
       <Navbar currentPage="contact" />
 
       {/* Hero with 3D Animation */}
-      <section className="px-6 lg:px-8 pt-16 pb-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-[1.1]">
-                Let's Build Together
-              </h1>
-              <p className="text-xl text-slate-600 leading-relaxed mb-6">
-                Have a project, partnership idea, or development opportunity you'd like to discuss?
-              </p>
-              <p className="text-xl text-slate-600 leading-relaxed mb-6">
-                We'd love to hear from you.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                Please email all inquiries to{" "}
-                <a
-                  href="mailto:sidney@lunadevelopment.com"
-                  className="text-[#175442] font-medium hover:text-[#0f3d2f] transition-colors"
-                >
-                  sidney@lunadevelopment.com
-                </a>
-              </p>
-            </div>
-            <div className="h-[400px] lg:h-[500px]">
-              <ADUAnimation />
-            </div>
-          </div>
+      <section className="px-6 lg:px-12 pt-40 pb-32">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-luna-charcoal mb-12 leading-[1.05] tracking-tight">
+            Let's Build Together
+          </h1>
+          <p className="text-xl md:text-2xl lg:text-3xl text-slate-600 leading-relaxed font-light mb-8 max-w-4xl mx-auto">
+            Have a project, partnership idea, or development opportunity you'd like to discuss?
+          </p>
+          <p className="text-xl md:text-2xl lg:text-3xl text-slate-600 leading-relaxed font-light mb-8 max-w-4xl mx-auto">
+            We'd love to hear from you.
+          </p>
+          <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto">
+            Please email all inquiries to{" "}
+            <a
+              href="mailto:lunadevelopment@gmail.com"
+              className="text-luna-green font-medium hover:text-luna-green-dark transition-colors"
+            >
+              lunadevelopment@gmail.com
+            </a>
+          </p>
         </div>
       </section>
 
@@ -172,22 +166,10 @@ export default function ContactPage() {
                     Email
                   </div>
                   <a
-                    href="mailto:sidney@lunadevelopment.com"
+                    href="mailto:lunadevelopment@gmail.com"
                     className="text-xl font-medium text-slate-900 hover:text-slate-600 transition-colors"
                   >
-                    sidney@lunadevelopment.com
-                  </a>
-                </div>
-
-                <div>
-                  <div className="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-2">
-                    Phone
-                  </div>
-                  <a
-                    href="tel:+16195555862"
-                    className="text-xl font-medium text-slate-900 hover:text-slate-600 transition-colors"
-                  >
-                    (619) 555-LUNA
+                    lunadevelopment@gmail.com
                   </a>
                 </div>
 
@@ -196,29 +178,25 @@ export default function ContactPage() {
                     Location
                   </div>
                   <p className="text-xl text-slate-700">
-                    San Diego, California
+                    1606 Grand Ave
                     <br />
-                    Pacific Beach & Coastal Properties
+                    San Diego, CA 92109
                   </p>
-                </div>
-
-                <div className="pt-8">
-                  <div className="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-3">
-                    Office Hours
-                  </div>
-                  <div className="space-y-2 text-slate-700">
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p>Saturday: By Appointment</p>
-                    <p>Sunday: Closed</p>
-                  </div>
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="mt-12 aspect-video bg-slate-200 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center text-slate-500 font-medium">
-                  Map Coming Soon
-                </div>
+              {/* Map */}
+              <div className="mt-12 aspect-video relative overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.0842599856874!2d-117.24992!3d32.79654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80deab5c3c0a3fa5%3A0x5c4f3e5a8c3f3c3f!2s1606%20Grand%20Ave%2C%20San%20Diego%2C%20CA%2092109!5e0!3m2!1sen!2sus!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute inset-0"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -226,7 +204,7 @@ export default function ContactPage() {
       </section>
 
       {/* Additional Info */}
-      <section className="px-6 lg:px-8 py-20 bg-slate-50">
+      {/* <section className="px-6 lg:px-8 py-20 bg-slate-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-6">
             Ready to Transform Your Property?
@@ -236,15 +214,14 @@ export default function ContactPage() {
             From initial feasibility to final construction, we're your partner in creating exceptional coastal developments.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
-      <footer className="px-6 lg:px-8 py-12 border-t border-slate-200">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-slate-600 gap-4">
-          <p>© {new Date().getFullYear()} Luna Development. All rights reserved.</p>
-          <p>San Diego, California</p>
-        </div>
-      </footer>
+
+      <div>
+        <Footer />
+      </div>
+
     </div>
   );
 }

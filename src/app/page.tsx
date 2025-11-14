@@ -94,7 +94,7 @@ export default function Home() {
       <FeaturedProjects />
 
       {/* What We Do - Headline */}
-      <section className="px-6 lg:px-12 pt-24 pb-24 bg-luna-beige">
+      <section className="px-6 lg:px-12 lg:pt-24 pb-24 bg-luna-beige">
         <div className="max-w-7xl mx-auto">
           <div className="text-xs text-luna-green uppercase tracking-wider-xl font-semibold mb-8">
             What We Do
@@ -112,7 +112,7 @@ export default function Home() {
             {/* Left - Image */}
             <div className="relative aspect-[4/5] bg-slate-200 overflow-hidden">
               <img
-                src="/adumock.png"
+                src="/1606grand.png"
                 alt="Luna Development Project"
                 className="w-full h-full object-cover"
               />
@@ -173,13 +173,13 @@ export default function Home() {
       </section>
 
       <section className="px-6 lg:px-12 pb-32 bg-luna-beige">
-        <div className="max-w-7xl mx-auto">
-          {/* Left - Image */}
-          <div className="bg-slate-200 overflow-hidden">
+        <div className="max-w-5xl mx-auto">
+          {/* Image */}
+          <div className="aspect-video overflow-hidden">
             <img
               src="/adumock.png"
-              alt="Luna Development Project"
-              className="w-auto h-auto"
+              alt="San Diego"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>

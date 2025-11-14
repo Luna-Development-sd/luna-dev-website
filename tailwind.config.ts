@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-roboto)', 'sans-serif'],
+        serif: ['var(--font-antic-didone)', 'serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -12,14 +12,18 @@ export default function Navbar({ currentPage = "home" }: NavbarProps) {
 
   const linkClass = (page: string) =>
     currentPage === page
-      ? "text-sm font-medium text-luna-charcoal uppercase tracking-wider-xl"
-      : "text-sm font-medium text-slate-500 hover:text-luna-charcoal transition-colors uppercase tracking-wider-xl";
+      ? "text-sm font-medium text-white uppercase tracking-wider-xl"
+      : "text-sm font-medium text-white/70 hover:text-white transition-colors uppercase tracking-wider-xl";
 
   return (
-    <nav className="sticky top-0 w-full bg-white/98 backdrop-blur-sm border-b border-luna-sand z-50">
+    <nav className="sticky top-0 w-full bg-[#326d59] backdrop-blur-sm z-50" style={{backgroundColor: '#326d59'}}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-        <Link href="/" className="text-lg font-bold text-luna-charcoal tracking-tight">
-          LUNA DEVELOPMENT
+        <Link href="/" className="flex items-center">
+          <img
+            src="/lunalogo.png"
+            alt="Luna Development"
+            className="h-16 object-contain"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -42,7 +46,7 @@ export default function Navbar({ currentPage = "home" }: NavbarProps) {
           {/* Contact Us Button */}
           <Link
             href="/contact"
-            className="hidden md:inline-flex px-8 py-3 bg-luna-green text-white text-sm font-medium hover:bg-luna-green-dark transition-colors uppercase tracking-wider-xl"
+            className="hidden md:inline-flex px-8 py-3 bg-white text-[#326d59] text-sm font-medium hover:bg-white/90 transition-colors uppercase tracking-wider-xl"
           >
             Contact Us
           </Link>
@@ -50,7 +54,7 @@ export default function Navbar({ currentPage = "home" }: NavbarProps) {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-luna-charcoal hover:text-luna-green"
+            className="md:hidden p-2 text-white hover:text-white/70"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (

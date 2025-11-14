@@ -74,7 +74,7 @@ export default function AboutPage() {
       </section>
 
       {/* What We Do */}
-      <section className="px-6 lg:px-12 lg:py-32 bg-luna-beige">
+      <section className="px-6 lg:px-12 lg:py-32 pb-12 bg-luna-beige">
         <div className="max-w-7xl mx-auto">
           <div className="text-xs text-luna-green uppercase tracking-wider-xl font-semibold mb-8">
             What We Do

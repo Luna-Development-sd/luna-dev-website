@@ -158,14 +158,23 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 lg:px-12 py-20 bg-luna-beige">
+      <section className="px-6 lg:px-12 lg:py-32 pb-24 pt-12 bg-luna-beige">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-4xl lg:text-5xl font-bold text-luna-charcoal mb-8 tracking-tight">
+              Let's Build the Future of San Diego
+            </h2>
+            <p className="text-xl text-slate-600 mb-12 leading-relaxed">
+              Whether you're a landowner, investor, architect, or future resident — we'd love to connect and explore what's possible together.
+            </p>
             <Link
               href="/contact"
-              className="inline-flex items-center px-12 py-4 border-2 border-luna-green text-luna-green font-semibold hover:bg-luna-green hover:text-white transition-colors text-lg uppercase tracking-wider"
+              className="inline-flex items-center px-10 py-5 bg-luna-green text-white font-medium hover:bg-luna-green-dark transition-colors text-lg"
             >
-              Schedule a Call
+              Contact Us
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </Link>
           </div>
         </div>

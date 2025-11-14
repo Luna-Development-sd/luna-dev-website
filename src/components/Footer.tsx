@@ -128,8 +128,8 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4">Contact</h3>
             <ul className="space-y-3 text-white/70">
               <li>
-                <a href="mailto:lunadevelopment@gmail.com" className="hover:text-white transition-colors">
-                  lunadevelopment@gmail.com
+                <a href="mailto:lunadevelopmentsd@gmail.com" className="hover:text-white transition-colors">
+                  lunadevelopmentsd@gmail.com
                 </a>
               </li>
               <li className="pt-2">

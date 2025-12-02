@@ -6,28 +6,28 @@ import Link from "next/link";
 const projects = [
   {
     id: 1,
-    name: "870 Garnet Ave",
+    name: "The Garnet",
     location: "Pacific Beach, San Diego, CA 92109",
     status: "29 Units",
     image: "/870garnet.png",
   },
   {
     id: 2,
-    name: "2061 Garnet Ave",
+    name: "The Garnet",
     location: "Pacific Beach, San Diego, CA 92109",
     status: "6 Units",
     image: "/2061garnet.png",
   },
   {
     id: 3,
-    name: "1345 Hornblend",
+    name: "The Hornblend",
     location: "Pacific Beach, San Diego, CA 92109",
     status: "14 Units",
     image: "/1345hornblend.png",
   },
   {
     id: 4,
-    name: "910 Diamond St",
+    name: "The Diamond",
     location: "Pacific Beach, San Diego, CA 92109",
     status: "3 → 10 Units",
     image: "/910diamond.png",
@@ -103,11 +103,10 @@ export default function FeaturedProjects() {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex
-                    ? "w-12 bg-luna-green"
-                    : "w-2 bg-luna-sand hover:bg-luna-green/50"
-                }`}
+                className={`h-2 rounded-full transition-all duration-300 ${index === currentIndex
+                  ? "w-12 bg-luna-green"
+                  : "w-2 bg-luna-sand hover:bg-luna-green/50"
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}

@@ -7,7 +7,7 @@ export default function ProjectsPage() {
   const projects = [
     {
       id: 1,
-      title: "5505 Mary Lane",
+      title: "The Mary",
       location: "San Diego, CA 92115",
       description: "Transformed a single-unit property into a 4-unit development through strategic entitlement and coastal zone expertise.",
       purchasePrice: "$962,000",
@@ -18,7 +18,7 @@ export default function ProjectsPage() {
     },
     {
       id: 2,
-      title: "870 Garnet Ave",
+      title: "The Garnet",
       location: "Pacific Beach, San Diego, CA 92109",
       description: "Major mixed-use development featuring 29 units with subterranean parking, navigating complex coastal regulations.",
       purchasePrice: "$4,350,000",
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
     },
     {
       id: 3,
-      title: "2061 Garnet Ave",
+      title: "The Garnet",
       location: "Pacific Beach, San Diego, CA 92109",
       description: "11,000 sq ft development delivering 6 modern units in the heart of Pacific Beach.",
       purchasePrice: "$1,695,000",
@@ -40,7 +40,7 @@ export default function ProjectsPage() {
     },
     {
       id: 4,
-      title: "1606 Grand Ave",
+      title: "The Grand",
       location: "Pacific Beach, San Diego, CA 92109",
       description: "Large-scale coastal development with 57 units, representing sophisticated entitlement strategy and execution.",
       purchasePrice: "$5,500,000",
@@ -51,7 +51,7 @@ export default function ProjectsPage() {
     },
     {
       id: 5,
-      title: "1345 Hornblend",
+      title: "The Hornblend",
       location: "Pacific Beach, San Diego, CA 92109",
       description: "14-unit infill project maximizing coastal zone potential through expert planning and design.",
       purchasePrice: "$1,900,000",
@@ -62,7 +62,7 @@ export default function ProjectsPage() {
     },
     {
       id: 6,
-      title: "910 Diamond St",
+      title: "The Diamond",
       location: "Pacific Beach, San Diego, CA 92109",
       description: "Transformed a 3-unit property into a 10-unit development, unlocking significant value through strategic development.",
       purchasePrice: "$2,100,000",

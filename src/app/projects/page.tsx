@@ -29,7 +29,7 @@ export default function ProjectsPage() {
     },
     {
       id: 3,
-      name: "The Pacific Palms",
+      title: "The Pacific Palms",
       location: "Pacific Beach, San Diego, CA 92109",
       description: "11,000 sq ft development delivering 6 modern units in the heart of Pacific Beach.",
       purchasePrice: "$1,695,000",

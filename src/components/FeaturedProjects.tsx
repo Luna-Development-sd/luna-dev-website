@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "The Garnet",
+    name: "The Pacific Palms",
     location: "Pacific Beach, San Diego, CA 92109",
     status: "6 Units",
     image: "/2061garnet.png",

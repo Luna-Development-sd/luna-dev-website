@@ -46,10 +46,10 @@ export default function ContactPage() {
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-4xl mx-auto">
             Please email all inquiries to{" "}
             <a
-              href="mailto:lunadevelopmentsd@gmail.com"
+              href="mailto:chris@lunadevelopment.com"
               className="text-luna-green font-medium hover:text-luna-green-dark transition-colors"
             >
-              lunadevelopmentsd@gmail.com
+              chris@lunadevelopment.com
             </a>
           </p>
         </div>
@@ -166,10 +166,10 @@ export default function ContactPage() {
                     Email
                   </div>
                   <a
-                    href="mailto:lunadevelopmentsd@gmail.com"
+                    href="mailto:chris@lunadevelopment.com"
                     className="text-xl font-medium text-slate-900 hover:text-slate-600 transition-colors"
                   >
-                    lunadevelopmentsd@gmail.com
+                    chris@lunadevelopment.com
                   </a>
                 </div>
 
